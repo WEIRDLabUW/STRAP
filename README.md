@@ -63,7 +63,7 @@ Next, encode the datasets using `encode_datasets.py`. By default, the script enc
 python strap/embedding/encode_datasets.py
 ```
 
-Finally, run `retrieval.py` to retrieve sub-trajectories from the offline dataset. By default, the script selects 3 demos from the "put both moka pots on the stove" task in LIBERO-10 (prior dataset) and retrieves the top 100 sub-trajectories from LIBERO-90 (offline dataset). The sub-trajectories have a minimum length of 20 and are retrieved using the DINOv2 embeddings of `agentview_rgb`.
+Finally, run `retrieval.py` to retrieve sub-trajectories from the offline dataset. By default, the script selects 5 demos from the "put both moka pots on the stove" task in LIBERO-10 (prior dataset) and retrieves the top 100 sub-trajectories from LIBERO-90 (offline dataset). The sub-trajectories have a minimum length of 20 and are retrieved using the DINOv2 embeddings of `agentview_rgb`.
 ```bash
 python strap/retrieval/retrieval.py
 ```
